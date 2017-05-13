@@ -1,0 +1,56 @@
+{
+  "name": "umsteigen.jetzt",
+  "description": "",
+  "version": "0.0.0",
+  "keywords": [],
+  "main": "index.js",
+  "files": [
+  ],
+  "author": "Julius Tens <mail@juliuste.de>",
+  "homepage": "https://umsteigen.jetzt",
+  "repository": "juliuste/umsteigen.jetzt",
+  "bugs": "https://github.com/juliuste/umsteigen.jetzt/issues",
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chunk-array": "^1.0.2",
+    "clone": "^2.1.1",
+    "compression": "^1.6.2",
+    "config": "^1.20.1",
+    "corser": "^2",
+    "express": "^4.14.0",
+    "express-force-ssl": "^0.3.2",
+    "fetch-ponyfill": "^3.0.2",
+    "horsey": "^3.0.0",
+    "js-beautify": "^1.6.4",
+    "lodash": "^4.16.4",
+    "lodash.filter": "^4.6.0",
+    "lodash.sortby": "^4.7.0",
+    "lodash.sumby": "^4.6.0",
+    "moment-duration-format": "^1.3.0",
+    "moment-timezone": "^0.5.5",
+    "ms": "^0.7.2",
+    "nocache": "^2",
+    "node-fetch": "^1.6.3",
+    "pithy": "^0.0.4",
+    "spdy": "^3.3.3",
+    "urlencode": "^1.1.0",
+    "vbb-client": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.0.0"
+  },
+  "peerDependencies": {
+    "forever": "^0.15"
+  },
+  "scripts": {
+    "start": "npm run build && forever start --uid umsteigen.jetzt -a index.js",
+    "stop": "forever stop umsteigen.jetzt",
+    "ssh": "ssh umsteigen.jetzt",
+    "build": "browserify assets/main.js > assets/bundle.js",
+    "deploy": "./deploy"
+  },
+  "license": "MIT"
+}

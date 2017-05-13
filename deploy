@@ -1,0 +1,15 @@
+#!/bin/sh
+
+rsync -rav --delete \
+	--exclude '.*' \
+	--exclude node_modules \
+	. 'umsteigen.jetzt:~/umsteigen.jetzt/'
+
+ssh umsteigen.jetzt "\
+cd ~/umsteigen.jetzt
+npm i
+npm update
+forever stop umsteigen.jetzt
+npm run build
+export NODE_ENV=production
+forever start -a --uid umsteigen.jetzt index.js"
