@@ -1,6 +1,6 @@
 # umsteigen.jetzt-rest
 
-Built at DB Hackathon.
+Built at [DB Hackathon](https://www.mindboxberlin.com/index.php/db-hackathon-may-2017.html).
 
 [![dependency status](https://img.shields.io/david/juliuste/umsteigen.jetzt-rest.svg)](https://david-dm.org/juliuste/umsteigen.jetzt-rest)
 [![dev dependency status](https://img.shields.io/david/dev/juliuste/umsteigen.jetzt-rest.svg)](https://david-dm.org/juliuste/umsteigen.jetzt-rest#info=devDependencies)
