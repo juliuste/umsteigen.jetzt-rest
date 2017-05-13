@@ -3,13 +3,13 @@
 rsync -rav --delete \
 	--exclude '.*' \
 	--exclude node_modules \
-	. 'umsteigen.jetzt:~/umsteigen.jetzt/'
+	. 'umsteigen.jetzt:~/umsteigen.jetzt-rest/'
 
 ssh umsteigen.jetzt "\
-cd ~/umsteigen.jetzt
+cd ~/umsteigen.jetzt-rest
 npm i
 npm update
-forever stop umsteigen.jetzt
+forever stop umsteigen.jetzt-rest
 npm run build
 export NODE_ENV=production
-forever start -a --uid umsteigen.jetzt index.js"
+forever start -a --uid umsteigen.jetzt-rest index.js"
