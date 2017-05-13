@@ -3,9 +3,9 @@
 rsync -rav --delete \
 	--exclude '.*' \
 	--exclude node_modules \
-	. 'umsteigen.jetzt:~/umsteigen.jetzt-rest/'
+	. 'umsteigen.jetzt-rest:~/umsteigen.jetzt-rest/'
 
-ssh umsteigen.jetzt "\
+ssh umsteigen.jetzt-rest "\
 cd ~/umsteigen.jetzt-rest
 npm i
 npm update

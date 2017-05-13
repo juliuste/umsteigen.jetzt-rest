@@ -7,4 +7,4 @@ npm-debug.log
 
 .scaleway
 config/*
-config/default.json
+!config/default.json
