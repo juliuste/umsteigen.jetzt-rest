@@ -1,5 +1,5 @@
 {
-  "name": "umsteigen.jetzt",
+  "name": "umsteigen.jetzt-rest",
   "description": "",
   "version": "0.0.0",
   "keywords": [],
@@ -7,9 +7,9 @@
   "files": [
   ],
   "author": "Julius Tens <mail@juliuste.de>",
-  "homepage": "https://umsteigen.jetzt",
-  "repository": "juliuste/umsteigen.jetzt",
-  "bugs": "https://github.com/juliuste/umsteigen.jetzt/issues",
+  "homepage": "https://umsteigen.jetzt-rest",
+  "repository": "juliuste/umsteigen.jetzt-rest",
+  "bugs": "https://github.com/juliuste/umsteigen.jetzt-rest/issues",
   "engines": {
     "node": ">=6"
   },
@@ -46,9 +46,9 @@
     "forever": "^0.15"
   },
   "scripts": {
-    "start": "npm run build && forever start --uid umsteigen.jetzt -a index.js",
-    "stop": "forever stop umsteigen.jetzt",
-    "ssh": "ssh umsteigen.jetzt",
+    "start": "npm run build && forever start --uid umsteigen.jetzt-rest -a index.js",
+    "stop": "forever stop umsteigen.jetzt-rest",
+    "ssh": "ssh umsteigen.jetzt-rest",
     "build": "browserify assets/main.js > assets/bundle.js",
     "deploy": "./deploy"
   },
