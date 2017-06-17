@@ -10,6 +10,5 @@ cd ~/umsteigen.jetzt-rest
 npm i
 npm update
 forever stop umsteigen.jetzt-rest
-npm run build
 export NODE_ENV=production
 forever start -a --uid umsteigen.jetzt-rest index.js"
