@@ -52,6 +52,7 @@ const validate = (data) =>
 	})
 
 module.exports = (req, res, next) => {
+	// req.body = JSON.parse('{"routes":[{"origin":{"latitude":52.500411,"longitude":13.387437},"destination":{"latitude":52.50655,"longitude":13.37967},"time":{"type":"arrival","value":1500361200000}},{"origin":{"latitude":52.500411,"longitude":13.387437},"destination":{"latitude":52.50655,"longitude":13.37967},"time":{"type":"arrival","value":1500361200000}}]}')
 	validate(req.body)
 	.then((r) => {
 		if(r.status === 'ok')

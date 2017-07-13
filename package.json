@@ -1,11 +1,10 @@
 {
   "name": "umsteigen.jetzt-rest",
   "description": "",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "keywords": [],
   "main": "index.js",
-  "files": [
-  ],
+  "files": [],
   "author": "Julius Tens <mail@juliuste.de>",
   "homepage": "https://umsteigen.jetzt-rest",
   "repository": "juliuste/umsteigen.jetzt-rest",
@@ -37,7 +36,7 @@
     "pithy": "^0.0.4",
     "spdy": "^3.3.3",
     "urlencode": "^1.1.0",
-    "vbb-client": "^1.0.0"
+    "vbb-client": "^2.0.1"
   },
   "devDependencies": {
     "browserify": "^14.0.0"
