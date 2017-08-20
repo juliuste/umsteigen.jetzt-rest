@@ -1,7 +1,7 @@
 {
   "name": "umsteigen.jetzt-rest",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [],
   "main": "index.js",
   "files": [],
@@ -20,9 +20,9 @@
     "config": "^1.20.1",
     "corser": "^2",
     "express": "^4.14.0",
-    "express-force-ssl": "^0.3.2",
     "fetch-ponyfill": "^3.0.2",
     "horsey": "^3.0.0",
+    "http": "0.0.0",
     "js-beautify": "^1.6.4",
     "lodash": "^4.16.4",
     "lodash.filter": "^4.6.0",
@@ -34,7 +34,6 @@
     "nocache": "^2",
     "node-fetch": "^1.6.3",
     "pithy": "^0.0.4",
-    "spdy": "^3.3.3",
     "urlencode": "^1.1.0",
     "vbb-client": "^2.0.1"
   },
